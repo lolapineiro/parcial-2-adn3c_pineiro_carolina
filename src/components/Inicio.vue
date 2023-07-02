@@ -10,7 +10,7 @@
 
    
     <div id="contenedor">
-        <header_component></header_component>
+        <HeaderComponent></HeaderComponent>
 
         <div class="container mt-5 mb-3">
             <h1 class="text-center">{{titulo}}</h1>
@@ -23,7 +23,7 @@
                 <habito_agradecer></habito_agradecer>
             </div>
             <div>
-                <footer_component></footer_component>
+                <FooterComponent></FooterComponent>
             </div>
         </div>
         
@@ -34,17 +34,17 @@
 </template>
 
 <script>
-import header_component from './header_component.vue';
+import HeaderComponent from './HeaderComponent.vue';
 import habito_agradecer from './habito_agradecer.vue';
-import footer_component from './footer_component.vue';
+import FooterComponent from './FooterComponent.vue';
 
 export default {
   name: 'Otro'
   ,components: {
     
-    footer_component,
+    FooterComponent,
     habito_agradecer,
-    header_component
+    HeaderComponent
   },
   props: {
     msg: String
